@@ -1,5 +1,5 @@
 ## TypeScript简介
-TypeSript介绍内容
+TypeScript是一套由微软开发、维护的编程语言。
 
 
 ## 编译器原理
