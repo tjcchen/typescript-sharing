@@ -28,6 +28,7 @@ function add(left: number, right: number): number {
     return left + right;
 }
 ```
+Note: 常见的类型有：string, number, boolean, any, unknown, never, Array, Enums, void
 
 ## 错误处理机制
 错误处理机制
