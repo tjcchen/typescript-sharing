@@ -22,8 +22,12 @@ TypeScript是一套由微软开发、维护的编程语言。TS不仅包含JavaS
 6、运行时计算字节码
 
 ## 用法基本介绍
-基本介绍
-
+1、类型声明
+```js
+function add(left: number, right: number): number {
+    return left + right;
+}
+```
 
 ## 错误处理机制
 错误处理机制
