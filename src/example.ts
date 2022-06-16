@@ -1,3 +1,6 @@
+/**
+ * Example 1
+ */
 import { SumArgs } from "./types";
 
 export let singleString = 'a';

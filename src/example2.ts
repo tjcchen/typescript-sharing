@@ -1,5 +1,9 @@
+/**
+ * Example 2
+ */
 export let someStringVar: string = String(9);
 
+// export a type
 export type SumArgs = {
     firstArgument: number;
     secondArgument: number;
