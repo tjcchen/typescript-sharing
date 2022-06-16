@@ -30,6 +30,25 @@ function add(left: number, right: number): number {
 ```
 Note: 常见的类型有：string, number, boolean, any, unknown, never, Array, Enums, void
 
+2、使用Class组织代码结构
+```js
+class Person {
+    private name: string;
+    private age: number;
+    private salary: number;
+
+    constructor(name: string, age: number, salary: number) {
+        this.name = name;
+        this.age = age;
+        this.salary = salary;
+    }
+
+    toString(): string {
+        return `${this.name} (${this.age}) (${this.salary})`; // As of version 1.4
+    }
+}
+```
+
 ## 错误处理机制
 错误处理机制
 
