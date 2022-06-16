@@ -49,6 +49,13 @@ class Person {
 }
 ```
 
+3、使用泛型使得函数更通用
+```js
+function id<T>(x: T): T {
+    return x;
+}
+```
+
 ## 错误处理机制
 错误处理机制
 
