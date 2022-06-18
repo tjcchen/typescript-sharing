@@ -56,6 +56,17 @@ function id<T>(x: T): T {
 }
 ```
 
+4、定义类型文件
+```js
+declare namespace arithmetics {
+    add(left: number, right: number): number;
+    subtract(left: number, right: number): number;
+    multiply(left: number, right: number): number;
+    divide(left: number, right: number): number;
+}
+export = arithmetics;
+```
+
 ## 错误处理机制
 错误处理机制
 
