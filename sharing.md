@@ -28,7 +28,8 @@ function add(left: number, right: number): number {
     return left + right;
 }
 ```
-Note: 常见的类型有：string, number, boolean, any, unknown, never, Array, Enums, void
+Note: 常见的类型有：any, unknown, boolean, number, bigint, string, symbol, Array<string>, string[], null, undefined,
+void, never
 
 2、使用Class组织代码结构
 ```js
