@@ -68,6 +68,14 @@ declare namespace arithmetics {
 export = arithmetics;
 ```
 
+5、并集（|）和交集（&）
+```js
+type Cat = {name: string, purrs: boolean};
+type Dog = {name: string, barks: boolean, wags: boolean};
+type CatOrDogOrBoth = Cat | Dog;
+type CatAndDog = Cat & Dog;
+```
+
 ## 错误处理机制
 错误处理机制
 
