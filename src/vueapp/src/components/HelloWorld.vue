@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1 @click="clickTitle('msg')">{{ msg }}</h1>
   </div>
 </template>
 
@@ -8,10 +8,15 @@
 import Vue from 'vue';
 
 export default Vue.extend({
-  name: 'HelloWorld',
+  name: 'FirstComp',
   props: {
     msg: String,
   },
+  methods: {
+    clickTitle(str: string) {
+      console.log(str);
+    }
+  }
 });
 </script>
 
