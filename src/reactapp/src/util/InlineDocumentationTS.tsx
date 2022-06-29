@@ -10,7 +10,7 @@ export default function InlineDocumentationTS({
 }: InlineDocumentionTSProps) {
     return (
         <>
-            <p>{ address.suite }</p>
+            <p>{ address.street }</p>
         </>
     );
 }
