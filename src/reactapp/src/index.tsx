@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 // import JavaScript from './util/javascript';
 // import TypeScript from './util/typescript';
-import InlineDocumentationJS from './util/InlineDocumentationJS';
+// import InlineDocumentationJS from './util/InlineDocumentationJS';
+import InlineDocumentationTS from './util/InlineDocumentationTS';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -22,7 +23,8 @@ root.render(
     {/* <App /> */}
     {/* <JavaScript /> */}
     {/* <TypeScript /> */}
-    <InlineDocumentationJS address={address} />
+    {/* <InlineDocumentationJS address={address} /> */}
+    <InlineDocumentationTS address={address} />
   </React.StrictMode>
 );
 
