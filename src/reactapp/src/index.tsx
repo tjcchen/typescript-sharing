@@ -1,10 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 // import JavaScript from './util/javascript';
-import TypeScript from './util/typescript';
+// import TypeScript from './util/typescript';
+import InlineDocumentationJS from './util/InlineDocumentationJS';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+const address = {
+    street: 'Main st.',
+    number: 32,
+    zip: 'AT15487',
+    suite: '#577'
+};
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -13,7 +21,8 @@ root.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <JavaScript /> */}
-    <TypeScript />
+    {/* <TypeScript /> */}
+    <InlineDocumentationJS address={address} />
   </React.StrictMode>
 );
 
