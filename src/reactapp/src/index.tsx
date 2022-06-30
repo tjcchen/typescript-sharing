@@ -24,10 +24,10 @@ const root = ReactDOM.createRoot(
 //=======================================================================================
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
+    <App />
     {/* <JavaScript /> */}
     {/* <TypeScript /> */}
-    <InlineDocumentationJS address={address} />
+    {/* <InlineDocumentationJS address={address} /> */}
     {/* <InlineDocumentationTS address={address} /> */}
   </React.StrictMode>
 );
