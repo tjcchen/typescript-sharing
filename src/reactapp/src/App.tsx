@@ -6,6 +6,7 @@
  * - Default Props
  */
 
+// interface is used to define an entity
 interface AppProps {
     headerText?: string;
 }
