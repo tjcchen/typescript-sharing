@@ -24,7 +24,7 @@ const root = ReactDOM.createRoot(
 //=======================================================================================
 root.render(
   <React.StrictMode>
-    <App headerText="This is a header" />
+    <App headerText="This is a header" extraText="This is an optional props" />
     {/* <JavaScript /> */}
     {/* <TypeScript /> */}
     {/* <InlineDocumentationJS address={address} /> */}
@@ -35,4 +35,4 @@ root.render(
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals(console.log);
+// reportWebVitals(console.log);

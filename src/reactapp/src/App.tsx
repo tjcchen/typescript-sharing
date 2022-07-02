@@ -9,12 +9,14 @@
 // interface is used to define an entity
 interface AppProps {
     headerText?: string;
+    extraText?: string
 }
 
-export default function App({ headerText }: AppProps) {
+export default function App({ headerText, extraText }: AppProps) {
     return (
         <>
             <h1>{ headerText }</h1>
+            { extraText && <p>{ extraText }</p>}
         </>
     );
 }
