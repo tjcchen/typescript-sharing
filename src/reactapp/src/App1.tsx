@@ -4,6 +4,10 @@
  * - Union types
  * - Do not nest objects in your interfaces [important]
  * - Organizing interfaces
+ * 
+ * A Hook is a special function that lets you “hook into” React features.
+ * For example, useState is a Hook that lets you add React state to function components.
+ * 
  */
 
 import { useState } from "react";
