@@ -5,7 +5,8 @@ import ReactDOM from 'react-dom/client';
 import InlineDocumentationJS from './util/InlineDocumentationJS';
 // import InlineDocumentationTS from './util/InlineDocumentationTS';
 import './index.css';
-import App from './App';
+// import App from './App';
+import App1 from './App1';
 import reportWebVitals from './reportWebVitals';
 
 const address = {
@@ -24,7 +25,8 @@ const root = ReactDOM.createRoot(
 //=======================================================================================
 root.render(
   <React.StrictMode>
-    <App headerText="This is a header" />
+    <App1 />
+    {/* <App headerText="This is a header" /> */}
     {/* <App headerText="This is a header" extraText="This is an optional props" /> */}
     {/* <JavaScript /> */}
     {/* <TypeScript /> */}

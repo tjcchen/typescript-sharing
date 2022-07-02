@@ -1,6 +1,14 @@
-export type Address = {
+export interface Address {
     street: string;
     number: number;
     zip?: string;
     suite?: string;
-};
+}
+
+export interface User {
+    name: string;
+    age: number;
+    country: string;
+    address: Address;
+    admin: boolean;
+}
