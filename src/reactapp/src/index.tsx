@@ -24,7 +24,7 @@ const root = ReactDOM.createRoot(
 //=======================================================================================
 root.render(
   <React.StrictMode>
-    <App />
+    <App headerText="This is a header" />
     {/* <JavaScript /> */}
     {/* <TypeScript /> */}
     {/* <InlineDocumentationJS address={address} /> */}

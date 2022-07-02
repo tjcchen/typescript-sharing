@@ -6,10 +6,14 @@
  * - Default Props
  */
 
-export default function App() {
+interface AppProps {
+    headerText?: string;
+}
+
+export default function App({ headerText }: AppProps) {
     return (
         <>
-            <p>React + TypeScript Application</p>
+            <h1>{ headerText }</h1>
         </>
     );
 }
