@@ -4,9 +4,10 @@ import ReactDOM from 'react-dom/client';
 // import TypeScript from './util/typescript';
 // import InlineDocumentationJS from './util/InlineDocumentationJS';
 // import InlineDocumentationTS from './util/InlineDocumentationTS';
-import App from './App';
+// import App from './App';
 // import App1 from './App1';
 // import App2 from './App2';
+import App3 from './App3';
 import './index.css';
 import { InputValueProvider } from './context/InputValueContext';
 import reportWebVitals from './reportWebVitals';
@@ -28,7 +29,7 @@ const root = ReactDOM.createRoot(
 root.render(
     <React.StrictMode>
         <InputValueProvider>
-            <App />
+            <App3 />
         </InputValueProvider>
         {/* <App2 /> */}
         {/* <App1 /> */}
