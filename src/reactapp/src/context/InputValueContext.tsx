@@ -9,6 +9,17 @@
  * - Optional: remove action destructuring
  * - Set AppState and Action types to createContext
  * - Assign Provider Props to Provider
+ * 
+ * useReducer is one of the additional Hooks that shipped with React v16.8.
+ * An alternative to the useState Hook, useReducer helps you manage complex state logic in React applications.
+ * When combined with other Hooks like useContext, useReducer can be a good alternative to Redux, Recoil or MobX.
+ * In certain cases, it is an outright better option.
+ * 
+ * useState is a basic Hook for managing simple state transformation,
+ * and useReducer is an additional Hook for managing more complex state logic.
+ * However, it’s worth noting that useState uses useReducer internally,
+ * implying that you could use useReducer for everything you can do with useState.
+ * 
  */
 
 import React, { createContext, useReducer } from "react";
@@ -26,6 +37,7 @@ interface InputProviderProps {
     children: React.ReactNode;
 }
 
+// we use action to change state
 const reducer = (state: AppState, action: Action) => {
     switch (action.type) {
         case 'SET_INPUT_VALUE':

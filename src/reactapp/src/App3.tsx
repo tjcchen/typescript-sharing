@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { InputValueContext } from './context/InputValueContext';
 
 function App3() {
+    // action will be dispatched to reducer
     const { state, dispatch } = useContext(InputValueContext);
 
     return (
