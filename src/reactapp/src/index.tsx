@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 // import JavaScript from './util/javascript';
 // import TypeScript from './util/typescript';
-import InlineDocumentationJS from './util/InlineDocumentationJS';
+// import InlineDocumentationJS from './util/InlineDocumentationJS';
 // import InlineDocumentationTS from './util/InlineDocumentationTS';
-import './index.css';
-// import App from './App';
+import App from './App';
 // import App1 from './App1';
-import App2 from './App2';
+// import App2 from './App2';
+import './index.css';
+import { InputValueProvider } from './context/InputValueContext';
 import reportWebVitals from './reportWebVitals';
 
 const address = {
@@ -25,16 +26,19 @@ const root = ReactDOM.createRoot(
 // JS errors will not be catched, and TS errors will emerge before application is running
 //=======================================================================================
 root.render(
-  <React.StrictMode>
-    <App2 />
-    {/* <App1 /> */}
-    {/* <App headerText="This is a header" /> */}
-    {/* <App headerText="This is a header" extraText="This is an optional props" /> */}
-    {/* <JavaScript /> */}
-    {/* <TypeScript /> */}
-    {/* <InlineDocumentationJS address={address} /> */}
-    {/* <InlineDocumentationTS address={address} /> */}
-  </React.StrictMode>
+    <React.StrictMode>
+        <InputValueProvider>
+            <App />
+        </InputValueProvider>
+        {/* <App2 /> */}
+        {/* <App1 /> */}
+        {/* <App headerText="This is a header" /> */}
+        {/* <App headerText="This is a header" extraText="This is an optional props" /> */}
+        {/* <JavaScript /> */}
+        {/* <TypeScript /> */}
+        {/* <InlineDocumentationJS address={address} /> */}
+        {/* <InlineDocumentationTS address={address} /> */}
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
