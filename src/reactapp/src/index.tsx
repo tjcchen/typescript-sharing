@@ -6,7 +6,8 @@ import InlineDocumentationJS from './util/InlineDocumentationJS';
 // import InlineDocumentationTS from './util/InlineDocumentationTS';
 import './index.css';
 // import App from './App';
-import App1 from './App1';
+// import App1 from './App1';
+import App2 from './App2';
 import reportWebVitals from './reportWebVitals';
 
 const address = {
@@ -25,7 +26,8 @@ const root = ReactDOM.createRoot(
 //=======================================================================================
 root.render(
   <React.StrictMode>
-    <App1 />
+    <App2 />
+    {/* <App1 /> */}
     {/* <App headerText="This is a header" /> */}
     {/* <App headerText="This is a header" extraText="This is an optional props" /> */}
     {/* <JavaScript /> */}
