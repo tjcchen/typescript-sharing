@@ -86,10 +86,20 @@ type CatAndDog = Cat & Dog;
 
 
 ## 整合TypeScript到 vue、react、taro 中
-1、使用cli构建工具新建
-`reactjs`
+1、使用cli工具构建新项目
+`react`
 ```bash
 npx create-react-app react-app --template typescript
+```
+
+`vue`
+```bash
+
+```
+
+`taro`
+```bash
+
 ```
 
 ## 总结
