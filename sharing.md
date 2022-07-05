@@ -95,12 +95,13 @@ npx create-react-app react-app --template typescript
 `vue`
 ```bash
 vue create vue-app
-// 从具体配置项中选择
+// 从具体配置项中选择 typescript 支持
 ```
 
 `taro`
 ```bash
-
+taro init taro-app
+// 从具体配置项中选择 typescript 支持
 ```
 
 ## 总结
