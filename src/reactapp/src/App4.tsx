@@ -13,8 +13,16 @@ import { useState } from "react";
 // Shipping
 // Payment
 
+type CheckoutStep = 'Details' | 'Shipping' | 'Payment';
+
+// enum CheckoutStep {
+//     Details = 'Details',
+//     Shipping = 'Shipping',
+//     Payment = 'Payment',
+// };
+
 export default function App4() {
-    const [checkoutStep, setCheckoutStep] = useState('Details');
+    const [checkoutStep, setCheckoutStep] = useState<CheckoutStep>('Details');
 
     // Logic check
     return (
