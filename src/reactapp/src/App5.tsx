@@ -5,6 +5,8 @@
  *   * If you have some knowledge about the Type
  */
 
+import DataGrid from './components/DataGrid';
+
 export default function App5() {
     const users = [
         { id: 1, name: 'John', age: 55 },
@@ -14,7 +16,7 @@ export default function App5() {
 
     return (
         <>
-            <p>Generic Componnets</p>
+            <DataGrid items={ users } />
         </>
     );
 }
