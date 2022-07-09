@@ -2,20 +2,21 @@
  * A DataGrid component
  */
 
-import { Order, User } from "../App5";
+interface Item {
+    id: number;
+}
 
 interface DataGridProps<T> {
-    // Do NOT use any
     items: T[];
 }
 
-function DataGrid({ items }: DataGridProps<User | Order>) {
+function DataGrid<T extends Item>({ items }: DataGridProps<T>) {
     return (
         <>
             <ul>
                 {
-                    items.map((item) => (
-                        <li>{ JSON.stringify(item) }</li>
+                    items.map((item: T) => (
+                        <li key={ item.id }>{ JSON.stringify(item) }</li>
                     ))
                 }
             </ul>

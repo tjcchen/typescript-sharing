@@ -20,16 +20,16 @@ export interface Order {
 }
 
 export default function App5() {
-    const users: User[] = [
+    const users = [
         { id: 1, name: 'John', age: 55 },
         { id: 2, name: 'Mitchel', age: 23 },
         { id: 3, name: 'Mike', age: 55 },
     ];
 
-    const orders: Order[] = [
-        { orderId: 1, quantity: 5, amount: 75 },
-        { orderId: 2, quantity: 2, amount: 20 },
-        { orderId: 3, quantity: 1, amount: 40 },
+    const orders = [
+        { id: 1, quantity: 5, amount: 75 },
+        { id: 2, quantity: 2, amount: 20 },
+        { id: 3, quantity: 1, amount: 40 },
     ];
 
     return (
