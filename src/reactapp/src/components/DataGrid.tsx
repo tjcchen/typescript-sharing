@@ -1,10 +1,11 @@
 /**
  * A DataGrid component
  */
+import { User } from '../App5';
 
 interface DataGridProps {
     // Do NOT use any
-    items: any[];
+    items: User[];
 }
 
 function DataGrid({ items }: DataGridProps) {
