@@ -4,12 +4,14 @@
 
 interface ImageItem {
     id: number;
+    type: 'imageItem';
     title: string;
     imageUrl: string;
 }
 
 interface QuoteItem {
     id: number;
+    type: 'quoteItem';
     quote: string;
 }
 
@@ -20,12 +22,14 @@ interface ComponentProps {
 }
 
 export default function Component({ items }: ComponentProps) {
-    // [IMPORTANT] Use in operator to make reactjs to differentiate between ImageItem and QuoteItem
+    // [IMPORTANT]
+    // 1. Use in operator to make reactjs to differentiate between ImageItem and QuoteItem
+    // 2. Or to use quality narrowing ( based on a type property )
     return (
         <ul>
             {
                 items.map((item: Item) => {
-                    if ('title' in item) { // ImageItem
+                    if (item.type === 'imageItem') { // ImageItem. eg: 'title' in item
                         return (
                             <li key={ item.id }>
                                 { item.title && <p>{ item.title }</p> }
