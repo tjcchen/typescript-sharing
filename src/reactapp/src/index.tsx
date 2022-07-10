@@ -9,7 +9,8 @@ import ReactDOM from 'react-dom/client';
 // import App2 from './App2';
 // import App3 from './App3';
 // import App4 from './App4';
-import App5 from './App5';
+// import App5 from './App5';
+import App6 from './App6';
 import './index.css';
 import { InputValueProvider } from './context/InputValueContext';
 import reportWebVitals from './reportWebVitals';
@@ -30,7 +31,8 @@ const root = ReactDOM.createRoot(
 //=======================================================================================
 root.render(
     <React.StrictMode>
-        <App5 />
+        <App6 />
+        {/* <App5 /> */}
         {/* <App4 /> */}
         {/* <InputValueProvider>
             <App3 />
