@@ -31,9 +31,9 @@ export default function Component({ items }: ComponentProps) {
                                     />
                                 )
                             }
-                            { item.quote && <p>{ item.quote }</p> }
+                            { item.quote && <p style={{ fontStyle: 'italic' }}>{ item.quote }</p> }
                         </li>
-                    )
+                    );
                 })
             }
         </ul>
