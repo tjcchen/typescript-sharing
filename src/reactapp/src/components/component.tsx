@@ -57,7 +57,6 @@ export default function Component({ items }: ComponentProps) {
                     //     <li key={ item.id }>
                     //         { item.title && <p>{ item.title }</p> }
                     //         {
-
                     //             item.imageUrl && (
                     //                 <img
                     //                     style={{ maxWidth: '15rem' }}
